@@ -246,10 +246,11 @@ def visualize_error(x, y, preds, index):
     plt.imshow(x[index], cmap = plt.get_cmap('gray'))
     plt.show()
     
-
-
+# Test baseline model
 #model = test_baseline_model(X_train, X_test, y_train, y_test)
+
+# Test CNN model
 #model = test_cnn_model(X_train, X_test, y_train, y_test)
-X_errors, y_errors, error_preds = find_errors(model, X_test, y_test)
-visualize_error(X_errors, y_errors, error_preds, index = 7)
+#X_errors, y_errors, error_preds = find_errors(model, X_test, y_test)
+#visualize_error(X_errors, y_errors, error_preds, index = 7)
     
